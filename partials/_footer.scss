@@ -48,6 +48,10 @@
                     transform: scale(1.2);
                     color: #0077b5;
                 }
+
+                &:focus{
+                    outline: 2px solid color.$white;
+                }
             }
         
         }
