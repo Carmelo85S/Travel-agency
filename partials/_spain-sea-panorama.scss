@@ -1,0 +1,73 @@
+@use '../variables/color';
+@use '../variables/font';
+@import '../mixin/mixin.scss';
+
+.bg_spain-sea-panorama{
+    @include full-w;
+    min-height: 700px;
+    background:url(../image/sea-panorama-bg-l.png);
+    @include bg;
+    @include flex-end-end;
+    margin-left: auto;
+
+    .content_container{
+        max-width: 850px;
+        min-height: 500px;
+        width: 100%;
+        @include flex-end-end;
+
+        .content{
+            max-width: 543px;
+            min-height: 374px;
+            width: 100%;
+            background-color: color.$box;
+            opacity: 0.9;
+            margin: auto;
+
+            .text{
+                max-width: 488px;
+                min-height: 350px;
+                width: 100%;
+                margin: auto;
+                @include flex-around-start-col;
+
+                .location{
+                    font-family: font.$josefin-sans;
+                    font-size: 20px;
+                    line-height: 26px;
+                    letter-spacing: 1.5px;
+                    color: color.$paragraph;
+                }
+
+                .title{
+                    font-family: font.$josefin-sans;
+                    font-size: 20px;
+                    line-height: 26px;
+                    color:color.$white;
+                }
+
+                .info{
+                    font-family: font.$josefin-sans;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color:color.$white;
+                }
+
+                .cta{
+                    @include btn;
+                    transition:all 0.3s ease-in-out;
+                    border: none;
+                    
+                    &:hover{
+                        background-color: color.$btn-hover;
+                    }
+    
+                    &:active{
+                        background-color: color.$btn-active;
+                    }
+                }
+
+            }
+        }
+    }
+}
