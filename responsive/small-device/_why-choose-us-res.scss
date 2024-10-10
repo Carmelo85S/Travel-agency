@@ -5,9 +5,12 @@
 
 @media screen and (min-width:320px) and (max-width: 599px){
     .bg{
+        @include full-w;
+        min-height: 500px;
         background: url(../../image/responsive/why-choose-us-bg-s.png);
         @include bg;
         
+
         .content_container{
             max-width: 599px;
             min-height: auto;

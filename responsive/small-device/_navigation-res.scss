@@ -2,13 +2,12 @@
 @use '../variables/font';
 @import '../mixin/mixin.scss';
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .nav_bg {
         .navigation_container {
             flex-direction: column;
             justify-content: space-between;
-            margin: 10px;
-
+            
             .fa-bars{
                 display: block;;
                 color:color.$white;
@@ -19,8 +18,29 @@
                 flex-direction: column;
                 width: 100%;
                 max-width: none;
-                padding: 20px;
+                margin: 0 20px;
                 background-color: color.$navbar;
+
+                .link {
+                    padding: 10px 0;
+                    text-align: left;
+                    width: 100%;
+                }
+            }
+
+            .icon {
+                display: block; 
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 769px){
+    .nav_bg {
+        .navigation_container {
+            .list {
+                margin:30px;
 
                 .link {
                     padding: 10px 0;

@@ -2,110 +2,124 @@
 @use '../variables/font';
 @import '../mixin/mixin.scss';
 
-
-@media screen and (min-width:320px) and (max-width:680px){
+@media screen and (min-width:320px)and (max-width:600px){
     header{
-    min-height: 100vh;
-    background: url(../../../image/responsive/bg-header-s.png);
-    @include bg;
-    @include flex-center-center;
-    flex-direction: column;
-
-    .wrapper{
-        max-width: 603px;
-        width: 100%;
+        @include full-w;
         min-height: 100vh;
+        background: url(../../image/responsive/bg-header-s.png);
+        @include bg;
         @include flex-center-center;
-
-        .content_container{
-            max-width: 580px;
+        flex-direction: column;
+    
+        .wrapper{
+            max-width: 310px;
             width: 100%;
-            min-height: 341px;
-            @include flex-bet-center-col;
-
-                .quote{
-                    font-family: font.$josefin-sans;
-                    font-size: 22px;
-                    letter-spacing: 6.8px;
-                    line-height: 26px;
-                    color: color.$white;
-                }
-            }
-
-            .search-bar{
-                max-width: 653px;
+            min-height: 100vh;
+            @include flex-center-center;
+    
+            .content_container{
+                max-width: 300px;
                 width: 100%;
-                min-height: 63px;
-                @include flex-center-center;
-                flex-wrap: wrap;
-
-                input{
-                    max-width: 580px;
+                min-height: 341px;
+                @include flex-bet-center-col;
+            
+    
+                .container_text{
+                    max-width: 300x;
+                    min-height: 76px;
+                    width: 100%;
+                    @include flex-center-center-col;
+    
+                    .logo{
+                        @include head-logo;
+                        color: color.$white;
+                        font-size:44px;
+                    }
+    
+                    .quote{
+                        font-family: font.$josefin-sans;
+                        font-size: 18px;
+                        letter-spacing: 4.8px;
+                        line-height: 26px;
+                        color: color.$white;
+                    }
+                }
+    
+                .search-bar{
+                    max-width: 300px;
                     width: 100%;
                     min-height: 63px;
-                    text-align: center;
-                    font-family: font.$josefin-sans;
-                    font-size: 14px;
-                    letter-spacing: 2.8px;
-                    line-height: 26px;
-                    color: color.$input-txt;
-
-                }
-
-                .search-button{
-                    @include search-btn;
-                    transition: all 0.3s ease-in-out;
-                    margin-top:10px;
-
-                    &:hover{
-                        background-color: color.$btn-hover;
+                    @include flex-center-center-col;
+                    margin:10px;
+    
+                    input{
+                        max-width: 300px;
+                        width: 100%;
+                        min-height: 63px;
+                        text-align: center;
+                        font-family: font.$josefin-sans;
+                        font-size: 14px;
+                        letter-spacing: 2.8px;
+                        line-height: 26px;
+                        color: color.$input-txt;
+    
                     }
+    
+                    .search-button{
+                        @include search-btn;
+                        transition: all 0.3s ease-in-out;
+                        margin: 10px;
 
-                    &:active{
-                        background-color: color.$btn-active;
+                        &:hover{
+                            background-color: color.$btn-hover;
+                        }
+    
+                        &:active{
+                            background-color: color.$btn-active;
+                        }
                     }
                 }
-            }
-
-            .cta{
-                max-width: 108px;
-                min-height: 46px;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-
-                .cta-text{
-                    font-family: font.$josefin-sans;
-                    font-size: 14px;
-                    line-height: 26px;
-                    letter-spacing: 2.8px;
-                    color: color.$white;
+    
+                .cta{
+                    max-width: 108px;
+                    min-height: 46px;
+                    width: 100%;
                     display: flex;
-                    flex-direction: column; 
+                    justify-content: center;
                     align-items: center;
-                    margin-bottom: 10px;
-                }
-
-                .fa-solid{
-                    color: color.$white;
-                }
-
-                .fade-in-down {
-                    animation: fade-in-down 2s ease infinite;
-                }
-                @keyframes fade-in-down {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(-20px);
+                    flex-direction: column;
+    
+                    .cta-text{
+                        font-family: font.$josefin-sans;
+                        font-size: 14px;
+                        line-height: 26px;
+                        letter-spacing: 1.8px;
+                        color: color.$white;
+                        display: flex;
+                        flex-direction: column; 
+                        align-items: center;
+                        margin-bottom: 10px;
                     }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0);
+    
+                    .fa-solid{
+                        color: color.$white;
                     }
+    
+                    .fade-in-down {
+                        animation: fade-in-down 2s ease infinite;
+                    }
+                    @keyframes fade-in-down {
+                        0% {
+                            opacity: 0;
+                            transform: translateY(-20px);
+                        }
+                        100% {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                      
                 }
-                  
             }
         }
     }
