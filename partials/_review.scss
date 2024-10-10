@@ -22,11 +22,10 @@
         }
 
         .review-container{
-            max-width: 1120px;
+            max-width: 1110px;
             min-height: 287px;
             width: 100%;
             @include flex-bet-center;
-            flex-wrap: wrap;
             margin: auto;
 
             .text-container{
@@ -50,7 +49,7 @@
 
                     .fa-quote-left{
                         font-size:70px;
-                        color:color.$quote;
+                        color:color.$quote
                     }
 
                     p{

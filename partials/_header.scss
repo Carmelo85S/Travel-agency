@@ -73,6 +73,10 @@ header{
                     &:active{
                         background-color: color.$btn-active;
                     }
+
+                    &:focus{
+                        outline: 2px solid color.$white;
+                    }
                 }
             }
 

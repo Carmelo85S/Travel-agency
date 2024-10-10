@@ -44,6 +44,10 @@
                 &:hover{
                     color: color.$link-hover;
                 }
+
+                &:focus{
+                    outline: 2px solid color.$white;
+                }
             }
         }
     }
