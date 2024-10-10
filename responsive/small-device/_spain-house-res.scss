@@ -1,0 +1,79 @@
+@use '../variables/color';
+@use '../variables/font';
+@import '../mixin/mixin.scss';
+
+
+@media screen and (min-width:320px) and (max-width: 599px){
+    .bg_spain-house{
+        background:url(../image/responsive/spain-house-bg-s.png);
+        @include bg;
+        @include flex-start-end;
+
+        .content_container{
+            max-width: 4500px;
+            min-height: 500px;
+            width: 100%;
+            @include flex-end-end;
+            
+
+            .content{
+                max-width: 350px;
+                min-height: 350px;
+                width: 100%;
+                background-color: color.$box;
+                opacity: 0.9;
+                margin: auto;
+                
+
+                .text{
+                    max-width: 340px;
+                    min-height: 340px;
+                    width: 100%;
+                    margin: auto;
+                    @include flex-center-center-col;
+
+                    .location{
+                        font-family: font.$josefin-sans;
+                        font-size: 18px;
+                        line-height: 26px;
+                        letter-spacing: 1.5px;
+                        color: color.$paragraph;
+                    }
+
+                    .title{
+                        font-family: font.$josefin-sans;
+                        font-size: 14px;
+                        line-height: 26px;
+                        color:color.$white;
+                        margin-top: 20px;
+                    }
+
+                    .info{
+                        font-family: font.$josefin-sans;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color:color.$white;
+                        margin-top:20px;
+                    }
+
+                    .cta{
+                        @include btn;
+                        transition:all 0.3s ease-in-out;
+                        border: none;
+                        margin-top:20px;
+                        
+                        
+                        &:hover{
+                            background-color: color.$btn-hover;
+                        }
+        
+                        &:active{
+                            background-color: color.$btn-active;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
