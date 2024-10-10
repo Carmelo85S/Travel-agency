@@ -1,0 +1,52 @@
+@use '../variables/color';
+@use '../variables/font';
+@import '../mixin/mixin.scss';
+
+.bg_icons-banner{
+    @include full-w;
+    min-height: 340px;
+    background-color: #333333;
+    display: flex;
+
+    .icons_container{
+        max-width: 1046px;
+        min-height: 180px;
+        width: 100%;
+        margin:auto;
+        @include flex-bet-center-wrap;
+    }
+
+    .card{
+        max-width: 250px;
+        width: 100%;
+        min-height: 170px;
+        @include flex-around-center-col;
+
+        .fa-magnifying-glass{
+            font-size:60px;
+            color:blue;
+        }
+
+        .fa-circle-check{
+            font-size:60px;
+            color:rgb(234, 133, 32);
+        }
+
+        .fa-thumbs-up{
+            font-size:60px;
+            color:blue;
+        }
+
+        &-text{
+            @include h2;
+            text-align: center;
+        }
+
+        .line{
+            border-top-left-radius: 10px;
+            border-top-right-radius:10px;
+            border:2px solid color.$white;
+        }
+
+    }
+}

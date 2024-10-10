@@ -18,6 +18,20 @@
     align-items: center;
 }
 
+@mixin flex-evenly-center-wrap{
+    display: flex;
+    justify-content: evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin flex-around-center-col{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
 @mixin flex-center-center-col{
     display: flex;
     justify-content: center;
