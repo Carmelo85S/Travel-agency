@@ -1,0 +1,65 @@
+@use '../variables/color';
+@use '../variables/font';
+@import '../mixin/mixin.scss';
+
+.review_bg{
+    @include full-w;
+    min-height: 730px;
+    background: url(../image/testimonial-bg-l.png);
+    @include bg;
+    display: flex;
+
+    .review_container-wrapper{
+        max-width: 1400px;
+        min-height: 530px;
+        width: 100%;
+        margin: auto;
+        @include flex-around-center-col;
+
+        .heading{
+            text-align: center;
+            @include h2;
+        }
+
+        .review-container{
+            max-width: 1110px;
+            min-height: 287px;
+            width: 100%;
+            @include flex-bet-center;
+            margin: auto;
+
+            .text-container{
+                max-width: 668px;
+                min-height: 287px;
+                width: 100%;
+
+                .info{
+                    max-width: 581px;
+                    min-height: 199px;
+                    width: 100%;
+                    margin: auto;
+                    @include flex-around-start-col;
+                
+                    .name{
+                        font-family: font.$josefin-sans;
+                        font-size:20px;
+                        line-height: 26px;
+                        color: color.$review;
+                    }
+
+                    .fa-quote-left{
+                        font-size:70px;
+                        color:color.$quote;
+                    }
+
+                    p{
+                        font-family: font.$josefin-sans;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color:color.$white;
+                    }
+                }
+            }
+        }
+    }
+}
