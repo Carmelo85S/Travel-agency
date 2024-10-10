@@ -74,4 +74,82 @@
             }
         }
     }
+
+}
+
+@media screen and (min-width:600px) and (max-width:1013px){
+    .review_bg{
+        @include full-w;
+        min-height: 730px;
+        background: url(../../image/testimonial-bg-l.png);
+        @include bg;
+        display: flex;
+
+        .review_container-wrapper{
+            max-width: 1013;
+            min-width: 320px;
+            min-height: 530px;
+            width: 100%;
+            margin: 20px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .heading{
+                text-align: center;
+                @include h2;
+            }
+
+            .review-container{
+                max-width: 800px;
+                min-height: 287px;
+                width: 100%;
+                @include flex-center-center-col;
+                margin: auto;
+
+                img{
+                    max-width: 300px;
+                    width: 100%;
+                    min-height: auto;
+                }
+
+                .text-container{
+                    max-width: 668px;
+                    min-height: 287px;
+                    width: 100%;
+                    text-align: center;
+
+                    .info{
+                        max-width: 760px;
+                        min-height: 199px;
+                        width: 100%;
+                        margin: auto;
+                        @include flex-center-center-col;
+                    
+                        .name{
+                            font-family: font.$josefin-sans;
+                            font-size:20px;
+                            line-height: 26px;
+                            color: color.$review;
+                            text-align: center;
+                        }
+
+                        .fa-quote-left{
+                            font-size:70px;
+                            color:color.$quote;
+                        }
+
+                        p{
+                            font-family: font.$josefin-sans;
+                            font-size: 16px;
+                            line-height: 26px;
+                            color:color.$white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

@@ -3,7 +3,7 @@
 @import '../mixin/mixin.scss';
 
 
-@media screen and (min-width:320px) and (max-width: 599px){
+@media screen and (min-width:320px) and (max-width: 1002px){
     .bg{
         @include full-w;
         min-height: 500px;
@@ -18,7 +18,7 @@
             margin: auto;
 
             .text-container{
-                max-width: 580px;
+                max-width: 599px;
                 min-height: 343px;
                 width: 100%;
                 @include flex-bet-center;
@@ -27,7 +27,6 @@
                 &-title{
                     text-align: center;
                     margin: 20px;
-
                 }
 
                 &-info{
