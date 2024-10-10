@@ -25,6 +25,25 @@
     flex-wrap: wrap;
 }
 
+@mixin flex-start-end{
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+}
+
+@mixin flex-end-end{
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+@mixin flex-around-start-col{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
 @mixin flex-around-center-col{
     display: flex;
     justify-content: space-around;

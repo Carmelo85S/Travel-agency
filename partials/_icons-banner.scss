@@ -41,12 +41,5 @@
             @include h2;
             text-align: center;
         }
-
-        .line{
-            border-top-left-radius: 10px;
-            border-top-right-radius:10px;
-            border:2px solid color.$white;
-        }
-
     }
 }
