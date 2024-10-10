@@ -1,0 +1,45 @@
+@use '../variables/color';
+@use'../variables/font';
+@import '../mixin/mixin.scss';
+
+.nav_bg{
+    @include full-w;
+    min-height: 80px;
+    background-color: color.$navbar;
+    display: flex;
+
+    .navigation_container{
+        max-width: 1121px;
+        min-height: 20px;
+        width: 100%;
+        margin:auto;
+        @include flex-bet-center;
+
+        .nav_logo{
+            font-family: font.$josefin-sans;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 26px;
+            letter-spacing: 2.4px;
+            color:color.$white;
+        }
+
+        .list{
+            max-width: 525px;
+            width: 100%;
+            min-height: 20px;
+            @include flex-bet-center;
+
+            .link{
+                font-family: font.$aleo;
+                font-size: 14px;
+                line-height: 26px;
+                color:color.$white;
+
+                &:hover{
+                    color: color.$link-hover;
+                }
+            }
+        }
+    }
+}

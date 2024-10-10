@@ -8,6 +8,7 @@ header{
     background: url(../image/header-bg-l.png);
     @include bg;
     @include flex-center-center;
+    flex-direction: column;
 
     .wrapper{
         max-width: 653px;
