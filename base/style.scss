@@ -8,6 +8,10 @@
 @import '../partials/review';
 @import '../partials/footer';
 
+@import '../responsive/small-device/header-res-s';
+@import '../responsive/small-device/_navigation-res-s';
+@import '../responsive/small-device/why-choose-us-res';
+
 *{
     margin: 0;
     padding: 0;

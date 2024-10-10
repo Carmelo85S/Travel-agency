@@ -1,0 +1,62 @@
+@use '../variables/color';
+@use '../variables/font';
+@import '../mixin/mixin.scss';
+
+@media (max-width: 768px) {
+    .bg{
+        background: url(../../image/responsive/why-choose-us-bg-s.png);
+        @include bg;
+        
+        .content_container{
+            max-width: 768px;
+            min-height: auto;
+            width: 100%;
+            margin: auto;
+
+            .text-container{
+                max-width: 562px;
+                min-height: 343px;
+                width: 100%;
+                @include flex-center-center;
+                flex-direction: column;
+                
+                &-title{
+                    @include h2;
+                }
+
+                &-info{
+                    @include paragraph;
+                }
+
+                .cta{
+                    @include btn;
+                    border:none;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover{
+                        background-color: color.$btn-hover;
+                    }
+
+                    &:active{
+                        background-color: color.$btn-active;
+                    }
+                }
+            }
+
+            .image-container{
+                max-width: 440px;
+                min-height: 450px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: column;
+
+                .bottom{
+                    align-self: end;
+                }
+            }
+        }
+
+    }
+}

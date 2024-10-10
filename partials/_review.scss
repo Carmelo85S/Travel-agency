@@ -22,10 +22,11 @@
         }
 
         .review-container{
-            max-width: 1110px;
+            max-width: 1120px;
             min-height: 287px;
             width: 100%;
             @include flex-bet-center;
+            flex-wrap: wrap;
             margin: auto;
 
             .text-container{

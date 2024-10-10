@@ -1,0 +1,37 @@
+@use '../variables/color';
+@use '../variables/font';
+@import '../mixin/mixin.scss';
+
+@media (max-width: 768px) {
+    .nav_bg {
+        .navigation_container {
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 10px;
+
+            .fa-bars{
+                display: block;;
+                color:color.$white;
+            }
+
+            .list {
+                display: none; 
+                flex-direction: column;
+                width: 100%;
+                max-width: none;
+                padding: 20px;
+                background-color: color.$navbar;
+
+                .link {
+                    padding: 10px 0;
+                    text-align: left;
+                    width: 100%;
+                }
+            }
+
+            .icon {
+                display: block; 
+            }
+        }
+    }
+}
