@@ -16,25 +16,28 @@
             min-width: 320px;
             min-height: 530px;
             width: 100%;
-            margin: 20px 10px;
+            margin: 20px 0;
             @include flex-around-center-col;
 
             .heading{
                 text-align: center;
                 @include h2;
+                font-size:24px;
+                
             }
 
             .review-container{
-                max-width: 500px;
+                max-width: 300px;
                 min-height: 287px;
                 width: 100%;
                 @include flex-center-center-col;
-                margin: auto;
+                
 
                 img{
                     max-width: 300px;
                     width: 100%;
                     min-height: auto;
+                    margin:auto;
                 }
 
                 .text-container{

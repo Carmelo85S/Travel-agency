@@ -12,20 +12,20 @@
         flex-direction: column;
     
         .wrapper{
-            max-width: 310px;
+            max-width: 320px;
             width: 100%;
             min-height: 100vh;
             @include flex-center-center;
     
             .content_container{
-                max-width: 300px;
+                max-width: 320px;
                 width: 100%;
                 min-height: 341px;
                 @include flex-bet-center-col;
             
     
                 .container_text{
-                    max-width: 300x;
+                    max-width: 320x;
                     min-height: 76px;
                     width: 100%;
                     @include flex-center-center-col;
@@ -68,7 +68,7 @@
                     .search-button{
                         @include search-btn;
                         transition: all 0.3s ease-in-out;
-                        margin: 10px;
+                        margin-top: 10px;
 
                         &:hover{
                             background-color: color.$btn-hover;
